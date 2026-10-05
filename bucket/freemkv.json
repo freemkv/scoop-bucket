@@ -8,6 +8,10 @@
         "64bit": {
             "url": "https://github.com/freemkv/freemkv/releases/download/v1.8.0/freemkv-x86_64-windows.zip",
             "hash": "5bd5f72f5d9d342e6af8933f08bef4613e1a49b1581ce02b73826801fdfc6b54"
+        },
+        "arm64": {
+            "url": "https://github.com/freemkv/freemkv/releases/download/v1.8.0/freemkv-aarch64-windows.zip",
+            "hash": "984576570e9709bb58c1022ae466669ea63f2c8ef541e6dfcbe8b261970792d7"
         }
     },
     "bin": "freemkv.com",
@@ -24,6 +28,9 @@
         "architecture": {
             "64bit": {
                 "url": "https://github.com/freemkv/freemkv/releases/download/v$version/freemkv-x86_64-windows.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/freemkv/freemkv/releases/download/v$version/freemkv-aarch64-windows.zip"
             }
         },
         "hash": {
