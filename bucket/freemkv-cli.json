@@ -1,0 +1,27 @@
+{
+    "version": "1.8.0",
+    "description": "Rip DVD, Blu-ray and UHD discs to MKV without re-encoding (command line only)",
+    "homepage": "https://freemkv.org",
+    "license": "MIT",
+    "notes": "Provides the same `freemkv` command as the freemkv app package; install one or the other.",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/freemkv/freemkv/releases/download/v1.8.0/freemkv-cli-x86_64-windows.exe#/freemkv.exe",
+            "hash": "83e988debd79a54984295fdcc84b350a69fccf79e1dabfe20c22154bba7ed9c1"
+        }
+    },
+    "bin": "freemkv.exe",
+    "checkver": {
+        "github": "https://github.com/freemkv/freemkv"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/freemkv/freemkv/releases/download/v$version/freemkv-cli-x86_64-windows.exe#/freemkv.exe"
+            }
+        },
+        "hash": {
+            "url": "$url.sha256"
+        }
+    }
+}

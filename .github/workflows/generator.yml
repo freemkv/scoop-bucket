@@ -1,0 +1,20 @@
+name: Generator
+
+# The checked-in manifests must be exactly what bin/generate.py produces from
+# the latest releases (or the excavator will rewrite them).
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Manifests match the latest releases
+        run: python3 bin/generate.py --check

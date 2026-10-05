@@ -1,0 +1,41 @@
+name: Excavator
+
+# Keeps the manifests current. First bin/generate.py rebuilds them from the
+# latest releases (picks up new architectures and asset layouts, hashes from the
+# .sha256 sidecars); then Scoop's standard excavator runs checkver/autoupdate.
+on:
+  workflow_dispatch:
+  schedule:
+    # every 4 hours
+    - cron: '20 */4 * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: excavator
+  cancel-in-progress: false
+
+jobs:
+  excavate:
+    name: Excavate
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Regenerate manifests from the latest releases
+        shell: bash
+        run: |
+          set -euo pipefail
+          python bin/generate.py
+          if [ -n "$(git status --porcelain -- bucket)" ]; then
+            git config user.name  "Matthew Jackson"
+            git config user.email "1085847+MattJackson@users.noreply.github.com"
+            git add bucket
+            git commit -q -m "bucket: regenerate manifests from the latest releases"
+            git push -q origin HEAD:main
+          fi
+      - name: Excavate
+        uses: ScoopInstaller/GithubActions@5bceeda181721d9d10a18fdcc3ddca6f33467ae6 # v3.0.0
+        env:
+          SKIP_UPDATED: 1
