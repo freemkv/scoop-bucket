@@ -1,16 +1,16 @@
 {
-    "version": "0.13.0",
+    "version": "0.13.2",
     "description": "Read, back up and identify optical-drive firmware for freemkv (desktop app + command line)",
     "homepage": "https://freemkv.org/firmware",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/freemkv/freemkv-firmware/releases/download/v0.13.0/freemkv-fw-x86_64-windows.zip",
-            "hash": "fc8cf444a5bca5913b98f40c210e7e43efdc38b1e967f0a33dd45038acdd2c83"
+            "url": "https://github.com/freemkv/freemkv-firmware/releases/download/v0.13.2/freemkv-fw-x86_64-windows.zip",
+            "hash": "b3d54d395bd38dfd556fc27df7dec6b486009afdd16afbe4b74f1e5b82822413"
         },
         "arm64": {
-            "url": "https://github.com/freemkv/freemkv-firmware/releases/download/v0.13.0/freemkv-fw-aarch64-windows.zip",
-            "hash": "0e597e38ef5fcfb53df9cce1eda673a6cee59bff076f6686239b1476177bf47d"
+            "url": "https://github.com/freemkv/freemkv-firmware/releases/download/v0.13.2/freemkv-fw-aarch64-windows.zip",
+            "hash": "bc7768b332e1d4731895571c902fd08dd9b07dd08f25a4c244ffe9c864daef64"
         }
     },
     "bin": [
