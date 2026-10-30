@@ -1,16 +1,16 @@
 {
-    "version": "0.15.3",
+    "version": "0.15.4",
     "description": "Flash optical-drive firmware for freemkv (desktop app + command line)",
     "homepage": "https://freemkv.org/firmware",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/freemkv/freemkv-firmware/releases/download/v0.15.3/freemkv-flash-x86_64-windows.zip",
-            "hash": "0a57d6fbf4b6c3b10abd10cfb2907fc16315d6953aead58f435328aaadd95b17"
+            "url": "https://github.com/freemkv/freemkv-firmware/releases/download/v0.15.4/freemkv-flash-x86_64-windows.zip",
+            "hash": "40b0635efda638c85356b88e6b979eabdf2cd4410f54868fb8efd99baac462f1"
         },
         "arm64": {
-            "url": "https://github.com/freemkv/freemkv-firmware/releases/download/v0.15.3/freemkv-flash-aarch64-windows.zip",
-            "hash": "a314190cfac00d6731266bbfe7a3acf4676f4b486f5e28430bc7d3a9b17acc65"
+            "url": "https://github.com/freemkv/freemkv-firmware/releases/download/v0.15.4/freemkv-flash-aarch64-windows.zip",
+            "hash": "1a126f4dbf296bd29b822db3abc27540df014c0dca2058dff94032e197632d68"
         }
     },
     "bin": [
