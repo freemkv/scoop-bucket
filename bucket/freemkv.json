@@ -1,17 +1,17 @@
 {
-    "version": "1.8.8",
+    "version": "1.8.9",
     "description": "Rip DVD, Blu-ray and UHD discs to MKV without re-encoding (desktop app + command line)",
     "homepage": "https://freemkv.org",
     "license": "MIT",
     "notes": "Run `freemkv` for the command line; the desktop app is in the Start menu (Scoop Apps).",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/freemkv/freemkv/releases/download/v1.8.8/freemkv-x86_64-windows.zip",
-            "hash": "b6eec2e11fb42aa07c4f4816a286546bb1da59e107ffaf6ce0c7d3e31c2690e0"
+            "url": "https://github.com/freemkv/freemkv/releases/download/v1.8.9/freemkv-x86_64-windows.zip",
+            "hash": "1f34eb4d61d4ea4e81be98761d2a7df35ce9f143df44e4f748b1c3f2c9526324"
         },
         "arm64": {
-            "url": "https://github.com/freemkv/freemkv/releases/download/v1.8.8/freemkv-aarch64-windows.zip",
-            "hash": "1165cf9d1492ca7e0b6f694e88ec175085e2cb09e7ed51ddba309adb7d396a55"
+            "url": "https://github.com/freemkv/freemkv/releases/download/v1.8.9/freemkv-aarch64-windows.zip",
+            "hash": "a33ab4514ad95522eb88d521ff61d90698bc8d3312cf3b858b12a7bcf4fa127f"
         }
     },
     "bin": "freemkv.com",
